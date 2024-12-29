@@ -1,0 +1,29 @@
+<body>
+    <div class="main-container">
+
+        <div id="log-in" class="left-container log-in">
+            <div>
+                <img src="../../assets/images/logo-removebg.png" class="img-fluid logo">
+            </div>
+            <div style="width: 100%;">
+                <form [formGroup]="loginForm" class="signup-form" #formDirective="ngForm" (ngSubmit)="onFormSubmit(loginForm, formDirective)">
+                    <input type="username" name="username" formControlName="username" placeholder="Username">
+                    <input type="password" name="password" formControlName="password" placeholder="Password">
+                    <br>
+                    <div  > Forgot password </div>
+                    <!-- <div (click)="openTermsAndConditions()"> Terms and Conditions </div> -->
+                    <div (click)="popup.openPopup()"> Terms and Conditions </div>
+                    <button type="submit" id="submit" class="button log-in-btn"  [disabled]="!loginForm.valid">Login</button>
+                </form>
+            </div>
+            <div class="login-link-container">
+
+            </div>
+        </div>
+
+        <div class="right-container"></div>
+    </div>
+    <app-terms-and-conditions-dialog #popup></app-terms-and-conditions-dialog>
+
+</body> 
+   

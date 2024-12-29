@@ -1,0 +1,43 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid blue;
+    color: blue;
+  }
+  
+  .learn-more {
+    margin-left: auto;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  .charts {
+    display: flex;
+    gap: 20px;
+
+  }
+  
+  .chart {
+    flex: 1;
+    text-align: center;
+  }
+  

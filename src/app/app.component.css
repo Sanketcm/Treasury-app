@@ -1,0 +1,42 @@
+.example-container {
+    height: 100%;
+    display: flex;
+  }
+  
+  .sidenav {
+    width: 240px;
+  }
+  
+  .content {
+    margin: 20px;
+  }
+  
+  /* Toolbar style */
+  mat-toolbar {
+    padding: 0 16px;
+  }
+/*
+form here */
+
+.responsive1{
+    display: block;
+}
+.topnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.heading {
+    font-size: 25px;
+}
+.postbackgrndColor{
+    /* .mat-toolbar-row, .mat-toolbar-single-row{ */
+        height: 70px;
+        font-size: 20px;
+        font-weight: 800;
+        background-color: rgb(0, 63, 152) !important;
+    /* } */
+}
